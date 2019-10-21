@@ -9,12 +9,33 @@
 </head>
 <body>
     <div class="Gallary">
-        <div class="pic"><img class="pic1" src="pic1.jpg" alt=""></div>
-        <div class="pic"><img class="pic1" src="pic2.jpg" alt=""></div>
-        <div class="pic"><img class="pic1" src="pic3.jpeg" alt=""></div>
-        <div class="pic"><img class="pic1" src="pic4.jpg" alt=""></div>
-        <div class="pic"><img class="pic1" src="pic5.jpg" alt=""></div>
-        <div class="pic"><img class="pic1" src="pic6.jpg" alt=""></div>
+        <div class="pic"><img class="pic1" onclick="openV();showPic(1)" src="pic1.jpg" alt=""></div>
+        <div class="pic"><img class="pic1" onclick="openV();showPic(2)" src="pic2.jpg" alt=""></div>
+        <div class="pic"><img class="pic1" onclick="openV();showPic(3)" src="pic3.jpeg" alt=""></div>
+        <div class="pic"><img class="pic1" onclick="openV();showPic(4)" src="pic4.jpg" alt=""></div>
+        <div class="pic"><img class="pic1" onclick="openV();showPic(5)" src="pic5.jpg" alt=""></div>
+        <div class="pic"><img class="pic1" onclick="openV();showPic(6)" src="pic6.jpg" alt=""></div>
+    </div>
+
+    <div class="boxView" id="boxView">
+        <img class="close" onclick="closeV()" src="close.png" alt="">
+
+        <div class="content" id="content">
+
+            <div class="openPic" id="openPic"><img class="open1" src="pic1box.jpg" alt=""></div>
+            <div class="openPic" id="openPic"><img class="open1" src="pic2box.jpg" alt=""></div>
+            <div class="openPic" id="openPic"><img class="open1" src="pic3box.jpeg" alt=""></div>
+            <div class="openPic" id="openPic"><img class="open1" src="pic4box.jpg" alt=""></div>
+            <div class="openPic" id="openPic"><img class="open1" src="pic5box.jpg" alt=""></div>
+            <div class="openPic" id="openPic"><img class="open1" src="pic6box.jpg" alt=""></div>
+
+
+
+            <img class="next" onclick="rightLeft(1)" src="next.png" alt="">
+            <img class="prev" onclick="rightLeft(-1)" src="prev.png" alt="">
+            
+
+        </div>
     </div>
 
     <script src="main.js"></script>
